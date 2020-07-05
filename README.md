@@ -1,4 +1,4 @@
-# Fabric Example Mod
+# Scrap Yard | Fabric Edition
 
 ## Setup
 
@@ -7,3 +7,17 @@ For setup instructions please see the [fabric wiki page](https://fabricmc.net/wi
 ## License
 
 This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+
+## Implemented items
+- Glass Sword
+
+## Implemented blocks
+
+## Todo:
+- King Ring
+- Lantern on a Rod
+- Glowstone Goggles
+- Potion Flask
+- Hand Saw
+- Granite Boat/Obsidian boat
+- Bamboo Spear

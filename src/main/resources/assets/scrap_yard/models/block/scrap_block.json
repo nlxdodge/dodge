@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "scrap_yard:block/scrap_block"
+  }
+}
+

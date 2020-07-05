@@ -9,7 +9,7 @@ import net.minecraft.util.Lazy;
 
 public enum ToolMaterials implements ToolMaterial {
 
-  GLASS(0, 131, 7.0F, 2.5F, 15, () -> {
+  GLASS(0, 131, 6.0F, 2.5F, 15, () -> {
     return Ingredient.ofStacks(new ItemStack(Items.GLASS));
   }), BAMBOO(1, 124, 3.0F, 3.0F, 22, () -> {
     return Ingredient.ofStacks(new ItemStack(Items.BAMBOO));

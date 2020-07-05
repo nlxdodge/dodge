@@ -7,7 +7,7 @@
   ],
   "key": {
     "B": {
-      "tag": "minecraft:bamboo"
+      "item": "minecraft:bamboo"
     },
     "I": {
       "item": "minecraft:iron_ingot"
@@ -17,7 +17,7 @@
     }
   },
   "result": {
-    "item": "scrapyard:bamboo_spear"
+    "item": "scrap_yard:bamboo_spear"
   }
 }
 

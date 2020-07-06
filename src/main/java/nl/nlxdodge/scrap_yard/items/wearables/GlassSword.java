@@ -1,4 +1,4 @@
-package nl.nlxdodge.scrap_yard.items.weapons;
+package nl.nlxdodge.scrap_yard.items.wearables;
 
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;

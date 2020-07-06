@@ -2,6 +2,8 @@
   "itemGroup.scrap_yard.all": "Scrap Yard",
   "item.scrap_yard.bamboo_spear": "Bamboo Spear",
   "item.scrap_yard.glass_sword": "Glass Sword",
+  "item.scrap_yard.silver_fish_spray": "Anti-Silverfish Spray",
   "block.scrap_yard.scrap_block": "Scrap Block",
-  "enchantment.scrap_yard.corrosive": "Corrosive"
+  "enchantment.scrap_yard.corrosive": "Corrosive",
+  "subtitles.scrap_yard.silver_fish_spray_usage": "Using Anti-Silverfish Spray"
 }

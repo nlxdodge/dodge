@@ -9,12 +9,12 @@
     "NLxDoDge"
   ],
   "contact": {
-    "homepage": "https://gerbenveenhof.nl/",
+    "homepage": "https://gerbenveenhof.nl/works/scrapyard",
     "sources": "https://github.com/nlxdodge/scrapyard"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/scrap_yard/icon.png",
 
   "environment": "*",
   "entrypoints": {
@@ -23,7 +23,7 @@
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "scrap_yard.mixins.json"
   ],
 
   "depends": {

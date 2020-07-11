@@ -1,10 +1,8 @@
 package nl.nlxdodge.scrap_yard.items;
 
-import java.util.function.Consumer;
+import java.util.List;
 
-import net.minecraft.block.BlockState;
-import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.entity.LivingEntity;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.mob.EndermiteEntity;
 import net.minecraft.entity.mob.SilverfishEntity;
@@ -12,6 +10,8 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundCategory;
+import net.minecraft.text.Text;
+import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.BlockPos;
@@ -43,7 +43,8 @@ public class SilverFishSpray extends Item {
   }
 
   @Override
-  public boolean canMine(BlockState state, World world, BlockPos pos, PlayerEntity miner) {
-    return false;
+  public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
+    tooltip.add(new TranslatableText("item.scrap_yard.silver_fish_spray.tooltip_1"));
+    tooltip.add(new TranslatableText("item.scrap_yard.silver_fish_spray.tooltip_2"));
   }
 }

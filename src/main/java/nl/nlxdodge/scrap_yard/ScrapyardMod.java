@@ -60,7 +60,7 @@ public class ScrapyardMod implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier("scrap_yard", "king_ring"),
 				new KingRing(new Item.Settings().group(SCRAP_YARD_GROUP)));
 		Registry.register(Registry.ITEM, new Identifier("scrap_yard", "silver_fish_spray"),
-				new SilverFishSpray(new Item.Settings().group(SCRAP_YARD_GROUP)));
+				new SilverFishSpray(new Item.Settings().group(SCRAP_YARD_GROUP).maxDamage(64)));
 
 		Registry.register(Registry.ITEM, new Identifier("scrap_yard", "scrap_item"),
 				new ScrapItem(new Item.Settings().group(SCRAP_YARD_GROUP)));

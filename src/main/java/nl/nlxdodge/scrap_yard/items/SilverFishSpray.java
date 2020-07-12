@@ -1,8 +1,11 @@
 package nl.nlxdodge.scrap_yard.items;
 
 import java.util.List;
+import java.util.function.Consumer;
 
 import net.minecraft.client.item.TooltipContext;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.mob.EndermiteEntity;
 import net.minecraft.entity.mob.SilverfishEntity;
@@ -20,24 +23,29 @@ import net.minecraft.world.World;
 import nl.nlxdodge.scrap_yard.ScrapyardMod;
 
 public class SilverFishSpray extends Item {
+
+  private final int radius = 6;
+  private final int height = 3;
+  
   public SilverFishSpray(Item.Settings settings) {
     super(settings);
-    settings.maxDamage(128);
   }
 
   @Override
   public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
     if (!world.isClient) {
-      BlockPos cornerLeft = new BlockPos(user.getPos().getX() - 6, user.getPos().getY() - 3, user.getPos().getZ() - 6);
-      BlockPos cornerRight = new BlockPos(user.getPos().getX() + 6, user.getPos().getY() + 3, user.getPos().getZ() + 6);
+      BlockPos cornerLeft = new BlockPos(user.getPos().getX() - radius, user.getPos().getY() - height, user.getPos().getZ() - radius);
+      BlockPos cornerRight = new BlockPos(user.getPos().getX() + radius, user.getPos().getY() + height, user.getPos().getZ() + radius);
       world.getEntities(null, new Box(cornerLeft, cornerRight)).forEach(entity -> {
         if (entity instanceof SilverfishEntity || entity instanceof EndermiteEntity) {
           entity.damage(DamageSource.player((PlayerEntity) user), 20);
         }
       });
-      damage(DamageSource.player(user));
-      world.playSound(null, user.getBlockPos(), ScrapyardMod.SILVER_FISH_SPRAY_USAGE_EVENT, SoundCategory.BLOCKS, 1f,
+      world.playSound(null, user.getBlockPos(), ScrapyardMod.SILVER_FISH_SPRAY_USAGE_EVENT, SoundCategory.PLAYERS, 1f,
           1f);
+      user.getStackInHand(hand).damage(1, user, (e) -> {
+        e.sendToolBreakStatus(hand);
+      });
     }
     return TypedActionResult.pass(user.getStackInHand(hand));
   }

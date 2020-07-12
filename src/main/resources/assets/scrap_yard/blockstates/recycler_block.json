@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "scrap_yard:block/recycler_block", "y": 180},
+    "facing=east": { "model": "scrap_yard:block/recycler_block", "y": 270 },
+    "facing=south": { "model": "scrap_yard:block/recycler_block" },
+    "facing=west": { "model": "scrap_yard:block/recycler_block", "y": 90 }
+  }
+}

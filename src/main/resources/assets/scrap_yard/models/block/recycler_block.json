@@ -1,0 +1,22 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "front": "scrap_yard:block/recycler_block_front",
+    "side": "scrap_yard:block/recycler_block_side",
+    "particle": "scrap_yard:block/recycler_block_side"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 0],
+      "to": [16, 16, 16],
+      "faces": {
+        "north": { "texture": "#front", "uv": [0, 0, 16, 16] },
+        "east": { "texture": "#side", "uv": [0, 0, 16, 16] },
+        "south": { "texture": "#side", "uv": [0, 0, 16, 16] },
+        "west": { "texture": "#side", "uv": [0, 0, 16, 16] },
+        "up": { "texture": "#side", "uv": [0, 0, 16, 16] },
+        "down": { "texture": "#side", "uv": [0, 0, 16, 16] }
+      }
+    }
+  ]
+}

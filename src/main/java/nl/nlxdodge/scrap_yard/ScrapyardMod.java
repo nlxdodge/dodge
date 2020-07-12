@@ -15,10 +15,10 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
-import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import nl.nlxdodge.scrap_yard.blocks.RecyclerBlock;
 import nl.nlxdodge.scrap_yard.blocks.ScrapBlock;
 import nl.nlxdodge.scrap_yard.items.ScrapItem;
 import nl.nlxdodge.scrap_yard.items.SilverFishSpray;
@@ -39,6 +39,8 @@ public class ScrapyardMod implements ModInitializer {
 			new Item.Settings().group(SCRAP_YARD_GROUP));
 	public static final Block SCRAP_BLOCK = new ScrapBlock(
 			AbstractBlock.Settings.of(Material.METAL, MaterialColor.BROWN).strength(1.0F));
+	public static final Block RECYCLER_BLOCK = new RecyclerBlock(
+			AbstractBlock.Settings.of(Material.METAL, MaterialColor.GREEN).strength(3.0F));
 
 	/* Enchants */
 	public static final Enchantment CORROSIVE = Registry.register(Registry.ENCHANTMENT,
@@ -65,6 +67,11 @@ public class ScrapyardMod implements ModInitializer {
 		Registry.register(Registry.BLOCK, new Identifier("scrap_yard", "scrap_block"), SCRAP_BLOCK);
 		Registry.register(Registry.ITEM, new Identifier("scrap_yard", "scrap_block"),
 				new BlockItem(SCRAP_BLOCK, new Item.Settings().group(SCRAP_YARD_GROUP)));
+
+		Registry.register(Registry.BLOCK, new Identifier("scrap_yard", "recycler_block"), RECYCLER_BLOCK);
+		Registry.register(Registry.ITEM, new Identifier("scrap_yard", "recycler_block"),
+				new BlockItem(RECYCLER_BLOCK, new Item.Settings().group(SCRAP_YARD_GROUP)));
+
 		TrinketSlots.addSlot(SlotGroups.HAND, Slots.RING,
 				new Identifier("trinkets", "textures/item/empty_trinket_slot_ring.png"));
 	}

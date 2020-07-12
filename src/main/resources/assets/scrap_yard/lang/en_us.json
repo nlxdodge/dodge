@@ -9,6 +9,8 @@
   "enchantment.scrap_yard.corrosive": "Corrosive",
   "item.scrap_yard.silver_fish_spray": "Anti-Silverfish Spray",
   "subtitles.scrap_yard.silver_fish_spray_usage": "Using Anti-Silverfish Spray",
-  "item.scrap_yard.silver_fish_spray.tooltip_1": "Instandly killes silverfish in a 6x3x6 radius",
-  "item.scrap_yard.silver_fish_spray.tooltip_2": "Also works on Endermite"
+  "item.scrap_yard.silver_fish_spray.tooltip_1": "Kills silverfish in a 6 block radius",
+  "item.scrap_yard.silver_fish_spray.tooltip_2": "Also works on Endermite",
+  "block.scrap_yard.recycler_block": "Item Recycler",
+  "block.scrap_yard.recycler_block.tooltip_1": "Scrap your unused items to actual useable ones"
 }

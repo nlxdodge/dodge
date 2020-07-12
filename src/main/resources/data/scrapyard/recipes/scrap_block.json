@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SSS",
+    "SSS"],
+  "key": {
+    "S": {
+      "item": "scrap_yard:scrap_item"
+    }
+  },
+  "result": {
+    "item": "scrap_yard:scrap_block"
+  }
+}

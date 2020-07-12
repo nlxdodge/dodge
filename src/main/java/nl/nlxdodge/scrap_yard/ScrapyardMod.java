@@ -20,6 +20,7 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import nl.nlxdodge.scrap_yard.blocks.ScrapBlock;
+import nl.nlxdodge.scrap_yard.items.ScrapItem;
 import nl.nlxdodge.scrap_yard.items.SilverFishSpray;
 import nl.nlxdodge.scrap_yard.items.wearables.BambooSpear;
 import nl.nlxdodge.scrap_yard.items.wearables.GlassSword;
@@ -29,17 +30,17 @@ import nl.nlxdodge.scrap_yard.misc.enchants.CorrosiveEnchant;
 
 public class ScrapyardMod implements ModInitializer {
 
+	/* Itemgroup */
 	public static final ItemGroup SCRAP_YARD_GROUP = FabricItemGroupBuilder.create(new Identifier("scrap_yard", "all"))
 			.icon(() -> new ItemStack(Items.BOWL)).build();
 
+	/* Items and Blocks */
 	public static final Item BAMBOO_SPEAR = new BambooSpear(ToolMaterials.BAMBOO, 2, 1.0f,
 			new Item.Settings().group(SCRAP_YARD_GROUP));
-	public static final Item GLASS_SWORD = new GlassSword(ToolMaterials.GLASS, 2, 1.5f,
-			new Item.Settings().group(SCRAP_YARD_GROUP));
-	public static final Item SILVER_FISH_SPRAY = new SilverFishSpray(new Item.Settings().group(SCRAP_YARD_GROUP));
-	public static final Block SCRAP_BLOCK = new ScrapBlock(AbstractBlock.Settings.of(Material.METAL, MaterialColor.BROWN)
-			.strength(1.0F).sounds(BlockSoundGroup.SCAFFOLDING));
+	public static final Block SCRAP_BLOCK = new ScrapBlock(
+			AbstractBlock.Settings.of(Material.METAL, MaterialColor.BROWN).strength(1.0F));
 
+	/* Enchants */
 	public static final Enchantment CORROSIVE = Registry.register(Registry.ENCHANTMENT,
 			new Identifier("scrap_yard", "corrosive"), new CorrosiveEnchant());
 
@@ -51,10 +52,16 @@ public class ScrapyardMod implements ModInitializer {
 	public void onInitialize() {
 		Registry.register(Registry.ITEM, new Identifier("scrap_yard", "glass_sword"),
 				new GlassSword(ToolMaterials.GLASS, 2, 1.5f, new Item.Settings().group(SCRAP_YARD_GROUP)));
+
 		Registry.register(Registry.ITEM, new Identifier("scrap_yard", "bamboo_spear"), BAMBOO_SPEAR);
+
 		Registry.register(Registry.ITEM, new Identifier("scrap_yard", "king_ring"),
 				new KingRing(new Item.Settings().group(SCRAP_YARD_GROUP)));
-		Registry.register(Registry.ITEM, new Identifier("scrap_yard", "silver_fish_spray"), SILVER_FISH_SPRAY);
+		Registry.register(Registry.ITEM, new Identifier("scrap_yard", "silver_fish_spray"),
+				new SilverFishSpray(new Item.Settings().group(SCRAP_YARD_GROUP)));
+
+		Registry.register(Registry.ITEM, new Identifier("scrap_yard", "scrap_item"),
+				new ScrapItem(new Item.Settings().group(SCRAP_YARD_GROUP)));
 		Registry.register(Registry.BLOCK, new Identifier("scrap_yard", "scrap_block"), SCRAP_BLOCK);
 		Registry.register(Registry.ITEM, new Identifier("scrap_yard", "scrap_block"),
 				new BlockItem(SCRAP_BLOCK, new Item.Settings().group(SCRAP_YARD_GROUP)));

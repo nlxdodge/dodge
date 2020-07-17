@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "IPI",
+    "IFI"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:stone_button"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "P": {
+      "item": "minecraft:poisonous_potato"
+    },
+    "F": {
+      "item": "minecraft:pufferfish"
+    }
+  },
+  "result": {
+    "item": "scrap_yard:silver_fish_spray"
+  }
+}

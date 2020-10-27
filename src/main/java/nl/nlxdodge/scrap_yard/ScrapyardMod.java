@@ -5,11 +5,9 @@ import dev.emi.trinkets.api.Slots;
 import dev.emi.trinkets.api.TrinketSlots;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
-import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 import nl.nlxdodge.scrap_yard.blocks.ModBlocks;
 import nl.nlxdodge.scrap_yard.items.ModItems;
 

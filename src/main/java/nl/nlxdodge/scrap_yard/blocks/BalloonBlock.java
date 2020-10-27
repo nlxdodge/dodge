@@ -4,10 +4,8 @@ import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.explosion.Explosion;
-import nl.nlxdodge.scrap_yard.ScrapyardMod;
 import nl.nlxdodge.scrap_yard.Sounds;
 
 public class BalloonBlock extends Block {

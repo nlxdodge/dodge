@@ -23,7 +23,7 @@ public class SilverFishSpray extends Item {
 
   private final int radius = 6;
   private final int height = 3;
-  
+
   public SilverFishSpray(Item.Settings settings) {
     super(settings);
   }
@@ -33,16 +33,13 @@ public class SilverFishSpray extends Item {
     if (!world.isClient) {
       BlockPos cornerLeft = new BlockPos(user.getPos().getX() - radius, user.getPos().getY() - height, user.getPos().getZ() - radius);
       BlockPos cornerRight = new BlockPos(user.getPos().getX() + radius, user.getPos().getY() + height, user.getPos().getZ() + radius);
-      world.getEntities(null, new Box(cornerLeft, cornerRight)).forEach(entity -> {
-        if (entity instanceof SilverfishEntity || entity instanceof EndermiteEntity) {
-          entity.damage(DamageSource.player((PlayerEntity) user), 20);
-        }
-      });
-      world.playSound(null, user.getBlockPos(), ScrapyardMod.SILVER_FISH_SPRAY_USAGE_EVENT, SoundCategory.PLAYERS, 1f,
-          1f);
-      user.getStackInHand(hand).damage(1, user, (e) -> {
-        e.sendToolBreakStatus(hand);
-      });
+
+     world.getEntitiesByClass(SilverfishEntity.class, new Box(cornerLeft, cornerRight), null).forEach(entity -> entity.damage(DamageSource.player(user), 20));
+
+     world.getEntitiesByClass(EndermiteEntity.class, new Box(cornerLeft, cornerRight), null).forEach(entity ->entity.damage(DamageSource.player(user), 20));
+
+      world.playSound(null, user.getBlockPos(), Sounds.SILVER_FISH_SPRAY_USAGE_EVENT, SoundCategory.PLAYERS, 1f, 1f);
+      user.getStackInHand(hand).damage(1, user, (e) -> e.sendToolBreakStatus(hand));
     }
     return TypedActionResult.pass(user.getStackInHand(hand));
   }

@@ -1,11 +1,6 @@
 package nl.nlxdodge.scrap_yard.items;
 
-import java.util.List;
-import java.util.function.Consumer;
-
 import net.minecraft.client.item.TooltipContext;
-import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.mob.EndermiteEntity;
 import net.minecraft.entity.mob.SilverfishEntity;
@@ -20,7 +15,9 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Box;
 import net.minecraft.world.World;
-import nl.nlxdodge.scrap_yard.ScrapyardMod;
+import nl.nlxdodge.scrap_yard.Sounds;
+
+import java.util.List;
 
 public class SilverFishSpray extends Item {
 

@@ -15,9 +15,8 @@ This template is available under the CC0 license. Feel free to learn from it and
 
 ## Todo:
 - King Ring
-- Lantern on a Rod
 - Glowstone Goggles
 - Potion Flask
 - Hand Saw
-- Granite Boat/Obsidian boat
+- Obsidian boat
 - Bamboo Spear

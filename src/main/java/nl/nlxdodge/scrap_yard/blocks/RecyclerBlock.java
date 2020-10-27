@@ -9,9 +9,10 @@ import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.Direction;
 
-public class RecyclerBlock extends HorizontalFacingBlock {
+public class RecyclerBlock extends HorizontalFacingBlock implements BlockEntityProvider {
+
   public RecyclerBlock(AbstractBlock.Settings settings) {
-    super(settings);
+    super(settings.strength(3.0f));
     setDefaultState(this.stateManager.getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.NORTH));
   }
 

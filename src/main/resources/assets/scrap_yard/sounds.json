@@ -4,6 +4,14 @@
     "sounds": [
       "scrap_yard:silver_fish_spray_usage"
     ]
+  },
+  "balloon_block_jump": {
+    "subtitle": "subtitles.scrap_yard.balloon_block_jump",
+    "sounds": [
+      "scrap_yard:balloon_1",
+      "scrap_yard:balloon_2",
+      "scrap_yard:balloon_3"
+    ]
   }
 }
 

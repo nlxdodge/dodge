@@ -1,8 +1,7 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "scrap",
   "version": "${version}",
-
   "name": "Scrap Yard",
   "description": "Mod that adds a lot of new vanilla like experiences from the scrap yard",
   "authors": [
@@ -23,7 +22,6 @@
     ]
   },
   "mixins": [
-    "scrap_yard.mixins.json"
   ],
 
   "depends": {

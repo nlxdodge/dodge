@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  C",
+    " B ",
+    "/  "
+  ],
+  "key": {
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "C": {
+      "item": "minecraft:chicken"
+    },
+    "B": {
+      "item": "minecraft:beef"
+    }
+  },
+  "result": {
+    "item": "scrap_yard:raw_meat_skewer"
+  },
+  "group": "scrap_yard"
+}

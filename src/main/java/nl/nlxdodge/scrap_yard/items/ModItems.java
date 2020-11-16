@@ -4,6 +4,9 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import nl.nlxdodge.scrap_yard.ScrapyardMod;
+import nl.nlxdodge.scrap_yard.items.consumeables.CookedMeatSkewer;
+import nl.nlxdodge.scrap_yard.items.consumeables.RawMeatSkewer;
+import nl.nlxdodge.scrap_yard.items.consumeables.SweetBerrySoda;
 import nl.nlxdodge.scrap_yard.items.wearables.BambooSpear;
 import nl.nlxdodge.scrap_yard.items.wearables.GlassSword;
 import nl.nlxdodge.scrap_yard.items.wearables.KingRing;
@@ -24,5 +27,11 @@ public class ModItems {
                 new SilverFishSpray(new Item.Settings().group(ScrapyardMod.SCRAP_YARD_GROUP).maxDamage(64)));
         Registry.register(Registry.ITEM, new Identifier("scrap_yard", "scrap_item"),
                 new ScrapItem(new Item.Settings().group(ScrapyardMod.SCRAP_YARD_GROUP)));
+        Registry.register(Registry.ITEM, new Identifier("scrap_yard", "sweet_berry_soda"),
+                new SweetBerrySoda(new Item.Settings().group(ScrapyardMod.SCRAP_YARD_GROUP)));
+        Registry.register(Registry.ITEM, new Identifier("scrap_yard", "raw_meat_skewer"),
+                new RawMeatSkewer(new Item.Settings().group(ScrapyardMod.SCRAP_YARD_GROUP)));
+        Registry.register(Registry.ITEM, new Identifier("scrap_yard", "cooked_meat_skewer"),
+                new CookedMeatSkewer(new Item.Settings().group(ScrapyardMod.SCRAP_YARD_GROUP)));
     }
 }

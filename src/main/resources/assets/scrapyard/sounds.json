@@ -1,0 +1,17 @@
+{
+  "silver_fish_spray_usage": {
+    "subtitle": "subtitles.scrapyard.silver_fish_spray_usage",
+    "sounds": [
+      "scrapyard:silver_fish_spray_usage"
+    ]
+  },
+  "balloon_block_jump": {
+    "subtitle": "subtitles.scrapyard.balloon_block_jump",
+    "sounds": [
+      "scrapyard:balloon_1",
+      "scrapyard:balloon_2",
+      "scrapyard:balloon_3"
+    ]
+  }
+}
+

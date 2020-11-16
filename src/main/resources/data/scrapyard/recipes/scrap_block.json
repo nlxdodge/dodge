@@ -6,10 +6,10 @@
     "SSS"],
   "key": {
     "S": {
-      "item": "scrap_yard:scrap_item"
+      "item": "scrapyard:scrap_item"
     }
   },
   "result": {
-    "item": "scrap_yard:scrap_block"
+    "item": "scrapyard:scrap_block"
   }
 }

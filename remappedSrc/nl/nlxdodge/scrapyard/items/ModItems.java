@@ -11,6 +11,8 @@ import nl.nlxdodge.scrapyard.items.wearables.BambooSpear;
 import nl.nlxdodge.scrapyard.items.wearables.GlassSword;
 import nl.nlxdodge.scrapyard.items.wearables.KingRing;
 import nl.nlxdodge.scrapyard.misc.ToolMaterials;
+import top.theillusivec4.curios.api.CuriosApi;
+import top.theillusivec4.curios.api.SlotTypeInfo;
 
 public class ModItems {
 

@@ -21,18 +21,14 @@ dependencies {
 
 	// PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
 	// You may need to force-disable transitiveness on them.
-	modImplementation ("com.github.emilyploszaj:trinkets:${project.trinkets_version}") {
-		exclude group :"net.fabricmc"
-	}
+	modImplementation "top.theillusivec4.curios:curios-fabric:${curios_version}"
 
 	modApi "teamreborn:energy:${project.energy_version}"
 	include "teamreborn:energy:${project.energy_version}"
 
-	modRuntime ("me.shedaniel:RoughlyEnoughItems:5.6.2") {
+	modRuntime ("me.shedaniel:RoughlyEnoughItems:5.8.10") {
 		exclude group :"net.fabricmc"
 	}
-//	modRuntime "RebornCore:RebornCore-1.16:4.4.2+build.78"
-//	modRuntime "TechReborn:TechReborn-1.16:3.5.4+build.135"
 }
 
 processResources {
@@ -87,6 +83,13 @@ publishing {
 		// mavenLocal()
 		allprojects {
 			repositories {
+				maven {
+					url = "https://maven.theillusivec4.top/"
+				}
+				maven {
+					name = "Ladysnake Libs"
+					url = 'https://dl.bintray.com/ladysnake/libs'
+				}
 				maven { 
 					url = 'https://jitpack.io'
 				}

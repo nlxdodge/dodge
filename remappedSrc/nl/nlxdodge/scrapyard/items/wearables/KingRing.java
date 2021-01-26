@@ -10,10 +10,9 @@ import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.world.World;
 import top.theillusivec4.curios.api.type.component.ICurio;
-
 import java.util.List;
 
-public class KingRing extends Item implements ICurio {
+public class KingRing extends Item implements ICurio  {
 
     public KingRing(Settings settings) {
         super(settings);

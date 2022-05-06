@@ -8,9 +8,9 @@ import net.minecraft.block.MaterialColor;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import nl.nlxdodge.scrapyard.ScrapyardMod;
+
+import static nl.nlxdodge.scrapyard.util.RegisterUtils.getIdentifier;
 
 public class ModBlocks {
 
@@ -18,13 +18,13 @@ public class ModBlocks {
     public static final Block BALLOON_BLOCK = new BalloonBlock(AbstractBlock.Settings.of(Material.SPONGE, MaterialColor.BROWN));
 
     public static void registerBlocks() {
-        Registry.register(Registry.BLOCK, new Identifier("scrapyard", "scrap_block"), SCRAP_BLOCK);
-        Registry.register(Registry.ITEM, new Identifier("scrapyard", "scrap_block"),
-                new BlockItem(SCRAP_BLOCK, new Item.Settings().group(ScrapyardMod.SCRAP_YARD_GROUP)));
+        Registry.register(Registry.BLOCK, getIdentifier("scrap_block"), SCRAP_BLOCK);
+        Registry.register(Registry.ITEM, getIdentifier("scrap_block"),
+                new BlockItem(SCRAP_BLOCK, new Item.Settings()));
 
-        Registry.register(Registry.BLOCK, new Identifier("scrapyard", "balloon_block"), BALLOON_BLOCK);
-        Registry.register(Registry.ITEM, new Identifier("scrapyard", "balloon_block"),
-                new BlockItem(BALLOON_BLOCK, new Item.Settings().group(ScrapyardMod.SCRAP_YARD_GROUP)));
+        Registry.register(Registry.BLOCK, getIdentifier("balloon_block"), BALLOON_BLOCK);
+        Registry.register(Registry.ITEM, getIdentifier("balloon_block"),
+                new BlockItem(BALLOON_BLOCK, new Item.Settings()));
 
         BlockRenderLayerMap.INSTANCE.putBlock(BALLOON_BLOCK, RenderLayer.getCutout());
     }

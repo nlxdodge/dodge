@@ -14,8 +14,9 @@ import top.theillusivec4.curios.api.SlotTypePreset;
 public class ScrapyardMod implements ModInitializer {
 
 	public static final String IDENTIFIER = "scrapyard";
-	public static final ItemGroup SCRAP_YARD_GROUP = FabricItemGroupBuilder.create(new Identifier("scrapyard", "all"))
-			.icon(() -> new ItemStack(ModItems.BAMBOO_SPEAR)).build();
+    public static final ItemGroup SCRAP_YARD_GROUP = FabricItemGroupBuilder.create(new Identifier("scrapyard", "all"))
+            .icon(() -> new ItemStack(ModItems.BAMBOO_SPEAR))
+            .build();
 
 	@Override
 	public void onInitialize() {

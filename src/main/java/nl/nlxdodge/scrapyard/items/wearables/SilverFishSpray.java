@@ -1,4 +1,4 @@
-package nl.nlxdodge.scrapyard.items;
+package nl.nlxdodge.scrapyard.items.wearables;
 
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.damage.DamageSource;
@@ -16,10 +16,11 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Box;
 import net.minecraft.world.World;
 import nl.nlxdodge.scrapyard.Sounds;
+import nl.nlxdodge.scrapyard.items.BasicItem;
 
 import java.util.List;
 
-public class SilverFishSpray extends Item {
+public class SilverFishSpray extends BasicItem {
 
     public SilverFishSpray(Item.Settings settings) {
         super(settings.maxDamage(64));

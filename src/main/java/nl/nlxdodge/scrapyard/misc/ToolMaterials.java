@@ -10,18 +10,19 @@ import java.util.function.Supplier;
 
 public enum ToolMaterials implements ToolMaterial {
 
-  GLASS(0, 124, 6.0F, 3.0F, 12, () -> {
-    return Ingredient.ofStacks(new ItemStack(Items.GLASS));
-  }), BAMBOO(1, 255, 4.0F, 2.5F, 20, () -> {
-    return Ingredient.ofStacks(new ItemStack(Items.BAMBOO));
-  });
+    GLASS(0, 124, 6.0F, 3.0F, 12, () -> {
+        return Ingredient.ofStacks(new ItemStack(Items.GLASS));
+    }),
+    BAMBOO(1, 255, 4.0F, 2.5F, 20, () -> {
+        return Ingredient.ofStacks(new ItemStack(Items.BAMBOO));
+    });
 
-  private final int miningLevel;
-  private final int itemDurability;
-  private final float miningSpeed;
-  private final float attackDamage;
-  private final int enchantability;
-  private final Lazy<Ingredient> repairIngredient;
+    private final int miningLevel;
+    private final int itemDurability;
+    private final float miningSpeed;
+    private final float attackDamage;
+    private final int enchantability;
+    private final Lazy<Ingredient> repairIngredient;
 
   ToolMaterials(int miningLevel, int itemDurability, float miningSpeed, float attackDamage, int enchantability,
                 Supplier<Ingredient> repairIngredient) {

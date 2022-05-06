@@ -4,16 +4,16 @@ import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.world.World;
+import nl.nlxdodge.scrapyard.items.BasicItem;
 import top.theillusivec4.curios.api.type.component.ICurio;
 
 import java.util.List;
 
-public class KingRing extends Item implements ICurio {
+public class KingRing extends BasicItem implements ICurio {
 
     public KingRing(Settings settings) {
         super(settings);

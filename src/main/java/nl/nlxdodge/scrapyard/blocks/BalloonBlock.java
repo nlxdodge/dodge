@@ -1,6 +1,5 @@
 package nl.nlxdodge.scrapyard.blocks;
 
-import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.util.math.BlockPos;
@@ -8,7 +7,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.explosion.Explosion;
 import nl.nlxdodge.scrapyard.Sounds;
 
-public class BalloonBlock extends Block {
+public class BalloonBlock extends BasicBlock {
 
     public BalloonBlock(Settings settings) {
         super(settings.nonOpaque().strength(2.0f));

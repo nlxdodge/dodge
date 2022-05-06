@@ -8,7 +8,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.explosion.Explosion;
 import nl.nlxdodge.scrapyard.Sounds;
 
-public class BalloonBlock extends Block {
+public class BalloonBlock extends BasicBlock {
 
     public BalloonBlock(Settings settings) {
         super(settings.nonOpaque().strength(2.0f));

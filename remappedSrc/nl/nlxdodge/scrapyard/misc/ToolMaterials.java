@@ -12,7 +12,8 @@ public enum ToolMaterials implements ToolMaterial {
 
   GLASS(0, 124, 6.0F, 3.0F, 12, () -> {
     return Ingredient.ofStacks(new ItemStack(Items.GLASS));
-  }), BAMBOO(1, 255, 4.0F, 2.5F, 20, () -> {
+  }),
+  BAMBOO(1, 255, 4.0F, 2.5F, 20, () -> {
     return Ingredient.ofStacks(new ItemStack(Items.BAMBOO));
   });
 

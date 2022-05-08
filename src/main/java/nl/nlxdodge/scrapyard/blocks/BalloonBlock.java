@@ -1,10 +1,10 @@
 package nl.nlxdodge.scrapyard.blocks;
 
+import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.minecraft.world.explosion.Explosion;
 import nl.nlxdodge.scrapyard.Sounds;
 
 public class BalloonBlock extends BasicBlock {
@@ -14,12 +14,7 @@ public class BalloonBlock extends BasicBlock {
     }
 
     @Override
-    public boolean shouldDropItemsOnExplosion(Explosion explosion) {
-        return false;
-    }
-
-    @Override
-    public void onSteppedOn(World world, BlockPos pos, Entity entity) {
+    public void onLandedUpon(World world, BlockState state, BlockPos pos, Entity entity, float fallDistance) {
         entity.addVelocity(0D, 1D, 0D);
         world.playSound(null, entity.getBlockPos(), Sounds.BALLOON_BLOCK_JUMP_EVENT, SoundCategory.PLAYERS, 1f, 1f);
     }

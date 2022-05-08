@@ -1,15 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": ["GGG", "GEG", "GGG"],
-  "key": {
-    "G": {
-      "item": "minecraft:gold_ingot"
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:gold_ring"
     },
-    "E": {
-      "item": "minecraft:emerald_ore"
+    {
+      "item": "minecraft:emerald"
+    },
+    {
+      "item": "minecraft:lapis_lazuli"
+    },
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "minecraft:diamond"
     }
-  },
+  ],
   "result": {
     "item": "scrapyard:king_ring"
-  }
+  },
+  "group": "scrap_yard"
 }

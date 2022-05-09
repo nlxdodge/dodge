@@ -15,7 +15,6 @@ import static nl.nlxdodge.scrapyard.util.RegisterUtils.getIdentifier;
 
 public class ModItems {
 
-    public static final Item BAMBOO_SPEAR = new BambooSpear(ToolMaterials.BAMBOO, 2, 1.0f, new Item.Settings());
     public static final Item GLASS_SWORD = new GlassSword(ToolMaterials.GLASS, 2, 1.5f, new Item.Settings());
     public static final Item SILVERFISH_SPRAY = new SilverFishSpray(new Item.Settings());
     public static final Item SCRAP_ITEM = new ScrapItem(new Item.Settings());
@@ -29,7 +28,6 @@ public class ModItems {
 
     public static void registerItems() {
         Registry.register(Registry.ITEM, getIdentifier("glass_sword"), GLASS_SWORD);
-        Registry.register(Registry.ITEM, getIdentifier("bamboo_spear"), BAMBOO_SPEAR);
         Registry.register(Registry.ITEM, getIdentifier("silver_fish_spray"), SILVERFISH_SPRAY);
         Registry.register(Registry.ITEM, getIdentifier("scrap_item"), SCRAP_ITEM);
         Registry.register(Registry.ITEM, getIdentifier("sweet_berry_soda"), SWEET_BERRY_SODA);

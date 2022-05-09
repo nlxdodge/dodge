@@ -12,22 +12,12 @@ group = project.maven_group
 
 repositories {
 	maven {
-		url = "https://maven.theillusivec4.top/"
-	}
-	maven {
 		name = "TerraformersMC"
 		url = "https://maven.terraformersmc.com/"
 	}
 	maven {
 		name = "Ladysnake Libs"
 		url = "https://ladysnake.jfrog.io/artifactory/mods"
-	}
-	maven {
-		url = 'https://jitpack.io'
-	}
-	maven {
-		name = "NerdHubMC"
-		url = "https://maven.abusedmaster.xyz/"
 	}
 	maven {
 		name = "SheDaniel"

@@ -14,20 +14,33 @@ This template is available under the CC0 license. Feel free to learn from it and
 While I intended it to be a learning project to get more into Java and it's new working methods as well as Gradle. I
 still want to finish all the idea's that I have in my head. But it can take some time, as most things should.
 
+## Mod Contents & Progress
+
+| Name             | Description                                                               | Progress |
+|------------------|---------------------------------------------------------------------------|----------|
+| Balloon Block    | Gives a boost upwards when jumped on it                                   | ✅        |
+| Glass Sword      | Sword made out of glass applies bleeding effect on hit                    | ✅        |
+| Bamboo Spear     |                                                                           | ⚠️       |
+| Gold Ring        | Basic gold ring used for crafting                                         | ✅        |
+| King Ring        | A ring once worn by kings, gives some luck when adventuring               | ✅        |
+| Silverfish Spray | Those pesky silverfish are easy with this bug spray                       | ✅        |
+| Hand Saw         | Use toolds to get more planks from wood                                   | ✅        |
+| Sweet Berry Soda | Thirsthy? Try some sweetberry soda!                                       | ✅        |
+| Meat Skewer      | Lika a Shish Kebab for more diverse food options including a vegan option | ✅        |                                                       |
+|||
+|||
+|||
+|||
+|||
+|||
+
 ## Implemented
 
-- Glass Sword
-- Bamboo Spear
-- King Ring
-- Anti-Silverfish Spray
 - Scrap/Block of Scrap
-- Sweet Berry Soda
-- Raw/Cooked Meat Skewers
-- Balloon
 - Enchanted book to Normal book
 
 ## Todo:
 
 - Glowstone Goggles
-- Hand Saw
+-
 - Obsidian boat

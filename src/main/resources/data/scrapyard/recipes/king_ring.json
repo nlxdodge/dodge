@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "minecraft:gold_ring"
+      "item": "scrapyard:gold_ring"
     },
     {
       "item": "minecraft:emerald"

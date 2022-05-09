@@ -10,13 +10,14 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.world.World;
+import nl.nlxdodge.scrapyard.ScrapyardMod;
 
 import java.util.List;
 
 public class KingRing extends TrinketItem {
 
     public KingRing(Settings settings) {
-        super(settings);
+        super(settings.group(ScrapyardMod.SCRAP_YARD_GROUP));
     }
 
     @Override

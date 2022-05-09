@@ -15,7 +15,7 @@ public class BalloonBlock extends BasicBlock {
 
     @Override
     public void onLandedUpon(World world, BlockState state, BlockPos pos, Entity entity, float fallDistance) {
-        entity.addVelocity(0D, 1D, 0D);
+        entity.addVelocity(0D, 10D, 0D);
         world.playSound(null, entity.getBlockPos(), Sounds.BALLOON_BLOCK_JUMP_EVENT, SoundCategory.PLAYERS, 1f, 1f);
     }
 }

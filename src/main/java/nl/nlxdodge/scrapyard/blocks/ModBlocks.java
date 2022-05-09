@@ -9,6 +9,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.registry.Registry;
+import nl.nlxdodge.scrapyard.ScrapyardMod;
 
 import static nl.nlxdodge.scrapyard.util.RegisterUtils.getIdentifier;
 
@@ -20,11 +21,11 @@ public class ModBlocks {
     public static void registerBlocks() {
         Registry.register(Registry.BLOCK, getIdentifier("scrap_block"), SCRAP_BLOCK);
         Registry.register(Registry.ITEM, getIdentifier("scrap_block"),
-                new BlockItem(SCRAP_BLOCK, new Item.Settings()));
+                new BlockItem(SCRAP_BLOCK, new Item.Settings().group(ScrapyardMod.SCRAP_YARD_GROUP)));
 
         Registry.register(Registry.BLOCK, getIdentifier("balloon_block"), BALLOON_BLOCK);
         Registry.register(Registry.ITEM, getIdentifier("balloon_block"),
-                new BlockItem(BALLOON_BLOCK, new Item.Settings()));
+                new BlockItem(BALLOON_BLOCK, new Item.Settings().group(ScrapyardMod.SCRAP_YARD_GROUP)));
 
         BlockRenderLayerMap.INSTANCE.putBlock(BALLOON_BLOCK, RenderLayer.getCutout());
     }

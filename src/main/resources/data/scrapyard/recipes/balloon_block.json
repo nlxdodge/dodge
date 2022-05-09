@@ -1,16 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "LLL",
     "LSL",
-    "LLL"
+    "S S",
+    "LSL"
   ],
   "key": {
     "L": {
       "item": "minecraft:leather"
     },
     "S": {
-      "item": "minecraft:slime_block"
+      "item": "minecraft:slime_ball"
     }
   },
   "result": {

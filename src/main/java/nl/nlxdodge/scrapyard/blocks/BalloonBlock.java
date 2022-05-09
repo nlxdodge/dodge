@@ -19,7 +19,7 @@ public class BalloonBlock extends BasicBlock {
 
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
-        entity.addVelocity(0D, 1D, 0D);
+        entity.addVelocity(entity.getVelocity().getX() * 1.5, 1D, entity.getVelocity().getZ() * 1.5);
         world.playSound(null, entity.getBlockPos(), Sounds.BALLOON_BLOCK_JUMP_EVENT, SoundCategory.PLAYERS, 1f, 1f);
     }
 }

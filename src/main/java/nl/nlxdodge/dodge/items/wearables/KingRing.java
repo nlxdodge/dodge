@@ -17,7 +17,7 @@ import java.util.List;
 public class KingRing extends TrinketItem {
 
     public KingRing(Settings settings) {
-        super(settings.group(DodgeMod.SCRAP_YARD_GROUP));
+        super(settings.group(DodgeMod.DODGE_GROUP));
     }
 
     @Override

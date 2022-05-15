@@ -11,7 +11,7 @@ import nl.nlxdodge.dodge.items.ModItems;
 public class DodgeMod implements ModInitializer {
 
     public static final String IDENTIFIER = "dodge";
-    public static final ItemGroup SCRAP_YARD_GROUP = FabricItemGroupBuilder
+    public static final ItemGroup DODGE_GROUP = FabricItemGroupBuilder
             .create(new Identifier("dodge", "all"))
             .icon(() -> new ItemStack(ModItems.KING_RING))
             .build();

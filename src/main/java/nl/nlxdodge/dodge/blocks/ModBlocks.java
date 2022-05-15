@@ -18,7 +18,7 @@ public class ModBlocks {
     public static final Block BALLOON_BLOCK = new BalloonBlock(AbstractBlock.Settings.of(Material.WOOL, DyeColor.BROWN));
 
     public static final Block SCRAP_BLOCK = new ScrapBlock(AbstractBlock.Settings.of(Material.METAL, DyeColor.BROWN));
-    private static final Item.Settings DODGE_GROUP_SETTINGS = new Item.Settings().group(DodgeMod.SCRAP_YARD_GROUP);
+    private static final Item.Settings DODGE_GROUP_SETTINGS = new Item.Settings().group(DodgeMod.DODGE_GROUP);
 
     public static void registerBlocks() {
         Registry.register(Registry.BLOCK, getIdentifier("scrap_block"), SCRAP_BLOCK);

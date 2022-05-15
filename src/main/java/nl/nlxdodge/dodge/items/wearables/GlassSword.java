@@ -12,7 +12,7 @@ import nl.nlxdodge.dodge.misc.ModStatusEffects;
 public class GlassSword extends SwordItem {
 
     public GlassSword(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
-        super(material, attackDamage, attackSpeed, settings.group(DodgeMod.SCRAP_YARD_GROUP));
+        super(material, attackDamage, attackSpeed, settings.group(DodgeMod.DODGE_GROUP));
     }
 
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {

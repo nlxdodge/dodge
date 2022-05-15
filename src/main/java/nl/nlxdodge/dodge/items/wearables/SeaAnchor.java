@@ -27,7 +27,7 @@ public class SeaAnchor extends SwordItem {
     );
 
     public SeaAnchor(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
-        super(toolMaterial, attackDamage, attackSpeed, settings.group(DodgeMod.SCRAP_YARD_GROUP));
+        super(toolMaterial, attackDamage, attackSpeed, settings.group(DodgeMod.DODGE_GROUP));
     }
 
     @Override

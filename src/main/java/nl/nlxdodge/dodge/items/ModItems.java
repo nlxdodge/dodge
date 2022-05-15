@@ -43,7 +43,7 @@ public class ModItems {
     }
 
     public static void registerFuelItems() {
-        FuelRegistry.INSTANCE.add(SLIME_CORE, 640);
+        FuelRegistry.INSTANCE.add(SLIME_CORE, 3200);
     }
 
     private static void registerItem(String identifier, Item item) {

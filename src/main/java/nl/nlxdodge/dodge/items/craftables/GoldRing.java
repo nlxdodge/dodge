@@ -17,6 +17,6 @@ public class GoldRing extends BasicItem {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(new TranslatableText("item.scrapyard.gold_ring.tooltip"));
+        tooltip.add(new TranslatableText("item.dodge.gold_ring.tooltip"));
     }
 }

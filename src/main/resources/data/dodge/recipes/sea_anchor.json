@@ -1,16 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "INI",
-    " NN",
-    "I I"
+    "BBI",
+    " IB",
+    "I B"
   ],
   "key": {
     "I": {
       "item": "minecraft:iron_ingot"
     },
-    "N": {
-      "item": "minecraft:iron_nugget"
+    "B": {
+      "item": "minecraft:iron_bars"
     }
   },
   "result": {

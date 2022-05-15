@@ -20,23 +20,16 @@ still want to finish all the idea's that I have in my head. But it can take some
 |------------------|---------------------------------------------------------------------------|----------|
 | Balloon Block    | Gives a boost upwards when jumped on it                                   | ✅        |
 | Glass Sword      | Sword made out of glass applies bleeding effect on hit                    | ✅        |
-| Bamboo Spear     |                                                                           | ⚠️       |
 | Gold Ring        | Basic gold ring used for crafting                                         | ✅        |
 | King Ring        | A ring once worn by kings, gives some luck when adventuring               | ✅        |
 | Silverfish Spray | Those pesky silverfish are easy with this bug spray                       | ✅        |
-| Hand Saw         | Use toolds to get more planks from wood                                   | ✅        |
-| Sweet Berry Soda | Thirsthy? Try some sweetberry soda!                                       | ✅        |
-| Meat Skewer      | Lika a Shish Kebab for more diverse food options including a vegan option | ✅        |                                                       |
-|||
-|||
-|||
-|||
-|||
-|||
+| Hand Saw         | Use tools to get more planks from wood                                    | ✅        |
+| Sweet Berry Soda | Thirsty? Try some sweet berry soda!                                       | ✅        |
+| Meat Skewer      | Like a Shish Kebab for more diverse food options including a vegan option | ✅        |                                                       |
+| Sea Anchor       | For getting resources underwater                                          | ✅        |
 
 ## Implemented
 
-- Scrap/Block of Scrap
 - Enchanted book to Normal book
 
 ## Todo:

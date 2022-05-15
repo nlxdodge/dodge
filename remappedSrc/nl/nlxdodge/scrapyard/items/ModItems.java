@@ -1,18 +1,18 @@
-package nl.nlxdodge.scrapyard.items;
+package nl.nlxdodge.dodge.items;
 
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import nl.nlxdodge.scrapyard.ScrapyardMod;
-import nl.nlxdodge.scrapyard.items.consumeables.CookedMeatSkewer;
-import nl.nlxdodge.scrapyard.items.consumeables.RawMeatSkewer;
-import nl.nlxdodge.scrapyard.items.consumeables.SweetBerrySoda;
-import nl.nlxdodge.scrapyard.items.craftables.ScrapItem;
-import nl.nlxdodge.scrapyard.items.craftables.SlimeCore;
-import nl.nlxdodge.scrapyard.items.wearables.*;
-import nl.nlxdodge.scrapyard.misc.ToolMaterials;
+import nl.nlxdodge.dodge.ScrapyardMod;
+import nl.nlxdodge.dodge.items.consumeables.CookedMeatSkewer;
+import nl.nlxdodge.dodge.items.consumeables.RawMeatSkewer;
+import nl.nlxdodge.dodge.items.consumeables.SweetBerrySoda;
+import nl.nlxdodge.dodge.items.craftables.ScrapItem;
+import nl.nlxdodge.dodge.items.craftables.SlimeCore;
+import nl.nlxdodge.dodge.items.wearables.*;
+import nl.nlxdodge.dodge.misc.ToolMaterials;
 
-import static nl.nlxdodge.scrapyard.util.RegisterUtils.getIdentifier;
+import static nl.nlxdodge.dodge.util.RegisterUtils.getIdentifier;
 
 public class ModItems {
 

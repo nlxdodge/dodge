@@ -1,25 +1,26 @@
 {
   "schemaVersion": 1,
-  "id": "scrapyard",
+  "id": "dodge",
   "version": "${version}",
-  "name": "Scrapyard",
-  "description": "Mod that adds a lot of new vanilla like experiences from the scrap yard",
+  "name": "The Dodge Mod",
+  "description": "Mod that adds a lot of new vanilla like experiences especially with slimes",
   "authors": [
     "NLxDoDge"
   ],
   "contact": {
-    "homepage": "https://gerbenveenhof.nl/works/scrapyard",
-    "sources": "https://github.com/nlxdodge/scrapyard"
+    "homepage": "https://gerbenveenhof.nl/works/dodge",
+    "sources": "https://github.com/nlxdodge/dodge"
   },
   "license": "CC0-1.0",
-  "icon": "assets/scrapyard/icon.png",
+  "icon": "assets/dodge/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "nl.nlxdodge.scrapyard.ScrapyardMod"
+      "nl.nlxdodge.dodge.DodgeMod"
     ]
   },
   "mixins": [
+    "dodge.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.13.3",

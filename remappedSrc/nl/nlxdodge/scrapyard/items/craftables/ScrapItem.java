@@ -1,6 +1,6 @@
-package nl.nlxdodge.scrapyard.items.craftables;
+package nl.nlxdodge.dodge.items.craftables;
 
-import nl.nlxdodge.scrapyard.items.BasicItem;
+import nl.nlxdodge.dodge.items.BasicItem;
 
 public class ScrapItem extends BasicItem {
   public ScrapItem(Settings settings) {

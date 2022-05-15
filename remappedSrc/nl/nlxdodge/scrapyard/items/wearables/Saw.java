@@ -1,8 +1,8 @@
-package nl.nlxdodge.scrapyard.items.wearables;
+package nl.nlxdodge.dodge.items.wearables;
 
 
 import net.minecraft.item.Item;
-import nl.nlxdodge.scrapyard.items.BasicItem;
+import nl.nlxdodge.dodge.items.BasicItem;
 
 public class Saw extends BasicItem {
 

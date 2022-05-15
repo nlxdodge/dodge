@@ -1,7 +1,7 @@
-package nl.nlxdodge.scrapyard.items.craftables;
+package nl.nlxdodge.dodge.items.craftables;
 
 import net.minecraft.item.Item;
-import nl.nlxdodge.scrapyard.items.BasicItem;
+import nl.nlxdodge.dodge.items.BasicItem;
 
 public class SlimeCore extends BasicItem {
     public SlimeCore(Settings settings) {

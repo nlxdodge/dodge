@@ -1,4 +1,4 @@
-package nl.nlxdodge.scrapyard.items;
+package nl.nlxdodge.dodge.items;
 
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.damage.DamageSource;
@@ -15,7 +15,7 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Box;
 import net.minecraft.world.World;
-import nl.nlxdodge.scrapyard.Sounds;
+import nl.nlxdodge.dodge.Sounds;
 
 import java.util.List;
 

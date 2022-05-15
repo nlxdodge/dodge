@@ -1,4 +1,4 @@
-package nl.nlxdodge.scrapyard;
+package nl.nlxdodge.dodge;
 
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;

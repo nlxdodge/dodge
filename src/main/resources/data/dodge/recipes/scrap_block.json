@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SSS",
+    "SSS"],
+  "key": {
+    "S": {
+      "item": "dodge:scrap_item"
+    }
+  },
+  "result": {
+    "item": "dodge:scrap_block"
+  }
+}

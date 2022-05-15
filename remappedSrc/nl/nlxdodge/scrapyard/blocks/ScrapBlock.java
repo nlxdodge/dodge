@@ -1,4 +1,4 @@
-package nl.nlxdodge.scrapyard.blocks;
+package nl.nlxdodge.dodge.blocks;
 
 import net.minecraft.block.Block;
 

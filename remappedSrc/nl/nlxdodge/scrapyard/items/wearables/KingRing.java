@@ -1,4 +1,4 @@
-package nl.nlxdodge.scrapyard.items.wearables;
+package nl.nlxdodge.dodge.items.wearables;
 
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
@@ -9,7 +9,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.world.World;
-import nl.nlxdodge.scrapyard.items.BasicItem;
+import nl.nlxdodge.dodge.items.BasicItem;
 import top.theillusivec4.curios.api.type.component.ICurio;
 
 import java.util.List;

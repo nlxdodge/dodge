@@ -1,4 +1,4 @@
-package nl.nlxdodge.scrapyard.misc;
+package nl.nlxdodge.dodge.misc;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;

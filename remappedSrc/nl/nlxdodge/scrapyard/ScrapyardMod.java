@@ -1,12 +1,12 @@
-package nl.nlxdodge.scrapyard;
+package nl.nlxdodge.dodge;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
-import nl.nlxdodge.scrapyard.blocks.ModBlocks;
-import nl.nlxdodge.scrapyard.items.ModItems;
+import nl.nlxdodge.dodge.blocks.ModBlocks;
+import nl.nlxdodge.dodge.items.ModItems;
 import top.theillusivec4.curios.api.CuriosApi;
 import top.theillusivec4.curios.api.SlotTypeInfo;
 import top.theillusivec4.curios.api.SlotTypePreset;

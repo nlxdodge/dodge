@@ -1,8 +1,8 @@
-package nl.nlxdodge.scrapyard.items.consumeables;
+package nl.nlxdodge.dodge.items.consumeables;
 
 import net.minecraft.item.Item;
-import nl.nlxdodge.scrapyard.items.BasicItem;
-import nl.nlxdodge.scrapyard.misc.FoodComponentExt;
+import nl.nlxdodge.dodge.items.BasicItem;
+import nl.nlxdodge.dodge.misc.FoodComponentExt;
 
 public class CookedMeatSkewer extends BasicItem {
     public CookedMeatSkewer(Settings settings) {

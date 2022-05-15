@@ -1,4 +1,4 @@
-package nl.nlxdodge.scrapyard.blocks;
+package nl.nlxdodge.dodge.blocks;
 
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.block.AbstractBlock;
@@ -10,9 +10,9 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import nl.nlxdodge.scrapyard.ScrapyardMod;
+import nl.nlxdodge.dodge.ScrapyardMod;
 
-import static nl.nlxdodge.scrapyard.util.RegisterUtils.getIdentifier;
+import static nl.nlxdodge.dodge.util.RegisterUtils.getIdentifier;
 
 public class ModBlocks {
 

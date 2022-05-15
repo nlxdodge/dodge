@@ -1,0 +1,17 @@
+{
+  "silver_fish_spray_usage": {
+    "subtitle": "subtitles.dodge.silver_fish_spray_usage",
+    "sounds": [
+      "dodge:silver_fish_spray_usage"
+    ]
+  },
+  "balloon_block_jump": {
+    "subtitle": "subtitles.dodge.balloon_block_jump",
+    "sounds": [
+      "dodge:balloon_1",
+      "dodge:balloon_2",
+      "dodge:balloon_3"
+    ]
+  }
+}
+

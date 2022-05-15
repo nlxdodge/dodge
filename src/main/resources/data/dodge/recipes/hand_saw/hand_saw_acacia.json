@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:acacia_log"
+    },
+    {
+      "item": "dodge:hand_saw"
+    }
+  ],
+  "result": {
+    "item": "minecraft:acacia_planks",
+    "count": 6
+  }
+}

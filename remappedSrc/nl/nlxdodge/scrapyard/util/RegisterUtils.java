@@ -1,7 +1,7 @@
-package nl.nlxdodge.scrapyard.util;
+package nl.nlxdodge.dodge.util;
 
 import net.minecraft.util.Identifier;
-import nl.nlxdodge.scrapyard.ScrapyardMod;
+import nl.nlxdodge.dodge.ScrapyardMod;
 
 public class RegisterUtils {
 

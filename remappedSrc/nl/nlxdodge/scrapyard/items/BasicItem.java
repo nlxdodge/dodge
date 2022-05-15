@@ -1,7 +1,7 @@
-package nl.nlxdodge.scrapyard.items;
+package nl.nlxdodge.dodge.items;
 
 import net.minecraft.item.Item;
-import nl.nlxdodge.scrapyard.ScrapyardMod;
+import nl.nlxdodge.dodge.ScrapyardMod;
 
 public class BasicItem extends Item {
 

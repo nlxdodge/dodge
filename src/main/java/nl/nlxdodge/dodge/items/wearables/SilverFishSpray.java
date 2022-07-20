@@ -23,6 +23,10 @@ import java.util.List;
 
 public class SilverFishSpray extends BasicItem {
 
+    private static final int RADIUS = 6;
+    private static final int HEIGHT = 6;
+
+
     public SilverFishSpray(Item.Settings settings) {
         super(settings.maxDamage(64));
     }
@@ -30,10 +34,8 @@ public class SilverFishSpray extends BasicItem {
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         if (!world.isClient()) {
-            int radius = 6;
-            int height = 3;
-            BlockPos cornerLeft = new BlockPos(user.getPos().getX() - radius, user.getPos().getY() - height, user.getPos().getZ() - radius);
-            BlockPos cornerRight = new BlockPos(user.getPos().getX() + radius, user.getPos().getY() + height, user.getPos().getZ() + radius);
+            BlockPos cornerLeft = new BlockPos(user.getPos().getX() - RADIUS, user.getPos().getY() - HEIGHT, user.getPos().getZ() - RADIUS);
+            BlockPos cornerRight = new BlockPos(user.getPos().getX() + RADIUS, user.getPos().getY() + HEIGHT, user.getPos().getZ() + RADIUS);
 
             world.getEntitiesByClass(SilverfishEntity.class, new Box(cornerLeft, cornerRight), EntityPredicates.VALID_LIVING_ENTITY)
                     .forEach(entity -> entity.damage(DamageSource.player(user), 20));

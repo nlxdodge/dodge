@@ -9,6 +9,7 @@ import nl.nlxdodge.dodge.items.consumeables.SweetBerrySoda;
 import nl.nlxdodge.dodge.items.craftables.GoldRing;
 import nl.nlxdodge.dodge.items.craftables.ScrapItem;
 import nl.nlxdodge.dodge.items.craftables.SlimeCore;
+import nl.nlxdodge.dodge.items.craftables.SlimeGrenade;
 import nl.nlxdodge.dodge.items.wearables.*;
 import nl.nlxdodge.dodge.misc.ToolMaterials;
 
@@ -27,6 +28,7 @@ public class ModItems {
     public static final Item HAND_SAW = new HandSaw(new Item.Settings());
     public static final Item SLIME_CORE = new SlimeCore(new Item.Settings());
     public static final Item SEA_ANCHOR = new SeaAnchor(net.minecraft.item.ToolMaterials.IRON, 8, -3.5f, new Item.Settings());
+    public static final Item SLIME_GRENADE = new SlimeGrenade(new Item.Settings());
 
     public static void registerItems() {
         registerItem("glass_sword", GLASS_SWORD);
@@ -40,6 +42,7 @@ public class ModItems {
         registerItem("hand_saw", HAND_SAW);
         registerItem("slime_core", SLIME_CORE);
         registerItem("sea_anchor", SEA_ANCHOR);
+        registerItem("slime_grenade", SLIME_GRENADE);
     }
 
     public static void registerFuelItems() {
